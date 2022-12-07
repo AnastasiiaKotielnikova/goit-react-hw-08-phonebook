@@ -1,7 +1,7 @@
 import { Formik, Form } from 'formik';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/operation';
-import { selectContacts } from 'redux/selectors';
+import { addContact } from 'redux/contacts/operation';
+import { selectContacts } from 'redux/contacts/selectors';
 import { schema } from './Shema';
 import { toast } from 'react-toastify';
 import {

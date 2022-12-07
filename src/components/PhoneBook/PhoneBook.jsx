@@ -1,7 +1,7 @@
 import ContactListItem from './ContactListItem';
 import { Container, ContactList } from './PhoneBook.styled';
 import { useSelector } from 'react-redux';
-import { selectVisibleContact } from 'redux/selectors';
+import { selectVisibleContact } from 'redux/contacts/selectors';
 
 const PhoneBook = () => {
   const filteredContacts = useSelector(selectVisibleContact);
