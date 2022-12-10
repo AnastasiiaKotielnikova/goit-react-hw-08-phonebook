@@ -4,10 +4,7 @@ const Home = () => {
   return (
     <Container>
       <Title>
-        Phonebook manager welcome page{' '}
-        <span role="img" aria-label="Greeting icon">
-          💁‍♀️
-        </span>
+        Phonebook manager welcome page!
       </Title>
     </Container>
   );

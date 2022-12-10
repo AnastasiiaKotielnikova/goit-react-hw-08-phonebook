@@ -1,21 +1,20 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
-  margin-top: 0;
+export const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #2a363b;
 `;
 
-export const HeaderNav = styled.header`
-  top: 0;
-  left: 0;
-  position: sticky;
-  z-index: 1100;
-  min-height: 64px;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 20px;
-  color: #fff;
-  background-color: grey;
-  p {
-    font-size: 30px;
-  }
+export const Logo = styled.span`
+  font-size: 40px;
+  font-weight: 700;
+  color: blue;
+`;
+
+export const HeaderNav = styled.div`
+  display: flex;
+  gap: 10px;
 `;

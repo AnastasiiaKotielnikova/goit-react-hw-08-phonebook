@@ -1,9 +1,7 @@
-import { Container } from 'components/App/App.styled';
+// import { Container } from 'components/App/App.styled';
 
 const ErrorMessage = () => {
-  return (
-    <Container>Sorry, something goes wrong :-( Try again later...</Container>
-  );
+  return <div>Sorry, something goes wrong :-( Try again later...</div>;
 };
 
 export default ErrorMessage;

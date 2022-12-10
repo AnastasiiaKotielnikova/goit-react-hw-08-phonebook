@@ -9,6 +9,6 @@ export const StyledNavLink = styled(NavLink)`
   outline: none;
   text-decoration: none;
   &.active {
-    color: #ffa17f;
+    color: blue;
   }
 `;

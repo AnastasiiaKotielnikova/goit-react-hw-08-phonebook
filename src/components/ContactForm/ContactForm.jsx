@@ -34,25 +34,25 @@ const ContactForm = () => {
   };
 
   return (
-    <Formik
-      initialValues={initialValues}
-      validationSchema={schema}
-      onSubmit={handleSubmit}
-    >
-      <Form>
-        <InputItem>
-          <InputLabel>Name:</InputLabel>
-          <Input type="text" name="name" />
-          <ValidationError component="span" name="name" />
-        </InputItem>
-        <InputItem>
-          <InputLabel>Number:</InputLabel>
-          <Input type="tel" name="number" />
-          <ValidationError component="span" name="number" />
-        </InputItem>
-        <SubmitBtn type="submit">Add contact</SubmitBtn>
-      </Form>
-    </Formik>
+      <Formik
+        initialValues={initialValues}
+        validationSchema={schema}
+        onSubmit={handleSubmit}
+      >
+        <Form>
+          <InputItem>
+            <InputLabel>Name:</InputLabel>
+            <Input type="text" name="name" />
+            <ValidationError component="span" name="name" />
+          </InputItem>
+          <InputItem>
+            <InputLabel>Number:</InputLabel>
+            <Input type="tel" name="number" />
+            <ValidationError component="span" name="number" />
+          </InputItem>
+          <SubmitBtn type="submit">Add contact</SubmitBtn>
+        </Form>
+      </Formik>
   );
 };
 

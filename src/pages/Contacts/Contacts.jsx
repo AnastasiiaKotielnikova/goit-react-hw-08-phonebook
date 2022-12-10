@@ -1,4 +1,4 @@
-import { Container, Title, SubTitle } from 'components/App/App.styled';
+import { Layout, Title, SubTitle } from './Contacts.styled';
 import ContactForm from 'components/ContactForm';
 import PhoneBook from 'components/PhoneBook';
 import Filter from 'components/Filter';
@@ -24,19 +24,19 @@ const Contacts = () => {
   }, [dispatch]);
 
   return (
-    <Container>
+    <Layout>
       <Title>Phonebook</Title>
       <ContactForm />
       {isLoading && !error && <Loader />}
       {error && <ErrorMessage />}
       {contacts.length > 0 && !isLoading && (
         <div>
-          <SubTitle>Contacts:</SubTitle>
+          <SubTitle>Contacts</SubTitle>
           <Filter />
           <PhoneBook />
         </div>
       )}
-    </Container>
+    </Layout>
   );
 };
 
